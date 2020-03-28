@@ -10,6 +10,8 @@ An ESP32 based lighting controller designed for lighting up bicycles, scooters, 
 * Power supervisor + 2A regulated 3.3V output for long lengths of LEDs (WS2812B or SK6812 are supported out of the box)
 * USB C Power Delivery compatible charging (does not implement the USB PD spec)
 * One button input connected to the ESP32 through the power supervisor
+* One WS2812B LED for status input
+* DIO5158 LiPo charger with charging and done charging indications
 * Pin connections for LiPo battery (2000 mAh recommended, 1000 mAh doable)
 * MessagePack based configuration for lighting
 * Bluetooth LE for signaling indicators, brakes
