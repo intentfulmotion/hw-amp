@@ -19,6 +19,7 @@ An ESP32 based lighting controller designed for lighting up bicycles, scooters, 
 * Over the Air updates over WiFi
 * BLE Mesh (will be enabled in a future firmware update)
 * Re-programmable over 6 pin programming header or via USB C so that you can load up your own firmware
+* 4 channels of output (power + signal) for LED strips
 
 ## More Information
 
