@@ -80,28 +80,6 @@ F 3 "" H 3220 2340 50  0001 C CNN
 $EndComp
 Text Notes 6090 5840 0    50   ~ 0
 3DOF Accelerometer
-$Comp
-L RC0201FR-075K1L:RC0201FR-075K1L R1
-U 1 1 5E484F23
-P 760 2960
-F 0 "R1" H 760 3202 50  0000 C CNN
-F 1 "RC0201FR-075K1L" H 760 3111 50  0000 C CNN
-F 2 "RC0201FR-075K1L:RESC0603X26N" H 760 2960 50  0001 L BNN
-F 3 "" H 760 2960 50  0001 C CNN
-	1    760  2960
-	0    -1   -1   0   
-$EndComp
-$Comp
-L RC0201FR-075K1L:RC0201FR-075K1L R3
-U 1 1 5E483D31
-P 2860 3260
-F 0 "R3" H 2860 3502 50  0000 C CNN
-F 1 "RC0201FR-075K1L" H 2860 3411 50  0000 C CNN
-F 2 "RC0201FR-075K1L:RESC0603X26N" H 2860 3260 50  0001 L BNN
-F 3 "" H 2860 3260 50  0001 C CNN
-	1    2860 3260
-	0    1    1    0   
-$EndComp
 Text Notes 8430 680  0    50   ~ 0
 Power Supervisor / Regulation / Filtering
 Wire Wire Line
@@ -1400,90 +1378,6 @@ F 9 "IN-S128DATRG" H 8850 5200 50  0001 L CNN "Manufacturer_Part_Number"
 	1    7500 5800
 	0    -1   -1   0   
 $EndComp
-$Comp
-L 12401610E4_2A:12401610E4#2A J1
-U 1 1 5E746C10
-P 1860 2760
-F 0 "J1" H 1860 3627 50  0000 C CNN
-F 1 "12401610E4#2A" H 1860 3536 50  0000 C CNN
-F 2 "AMPHENOL_12401610E4#2A" H 1860 2760 50  0001 L BNN
-F 3 "Amphenol" H 1860 2760 50  0001 L BNN
-F 4 "12401610E4#2A" H 1860 2760 50  0001 L BNN "Field4"
-F 5 "Conn USB Type C Surface Mount Receptacle" H 1860 2760 50  0001 L BNN "Field5"
-F 6 "Unavailable" H 1860 2760 50  0001 L BNN "Field6"
-F 7 "Manufacturer Recommendation" H 1860 2760 50  0001 L BNN "Field7"
-F 8 "None" H 1860 2760 50  0001 L BNN "Field8"
-F 9 "None" H 1860 2760 50  0001 L BNN "Field9"
-	1    1860 2760
-	1    0    0    -1  
-$EndComp
-Text Label 1260 2760 2    50   ~ 0
-D-
-Text Label 2460 2660 0    50   ~ 0
-D-
-Text Label 2460 2960 0    50   ~ 0
-VBUS
-Text Label 2460 2460 0    50   ~ 0
-VBUS
-Text Label 1260 2460 2    50   ~ 0
-VBUS
-Text Label 1260 2960 2    50   ~ 0
-VBUS
-Text Label 1260 2660 2    50   ~ 0
-D+
-Text Label 2460 2760 0    50   ~ 0
-D+
-$Comp
-L power:GND #PWR09
-U 1 1 5E8025C1
-P 2860 3750
-F 0 "#PWR09" H 2860 3500 50  0001 C CNN
-F 1 "GND" V 2865 3622 50  0000 R CNN
-F 2 "" H 2860 3750 50  0001 C CNN
-F 3 "" H 2860 3750 50  0001 C CNN
-	1    2860 3750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2460 3460 2580 3460
-Wire Wire Line
-	2580 3460 2580 3750
-Wire Wire Line
-	2580 3750 2860 3750
-Wire Wire Line
-	2460 3260 2580 3260
-Wire Wire Line
-	2580 3260 2580 3460
-Connection ~ 2580 3460
-Wire Wire Line
-	2860 2860 2460 2860
-Wire Wire Line
-	2860 3660 2860 3750
-Connection ~ 2860 3750
-Wire Wire Line
-	2460 2160 2580 2160
-Wire Wire Line
-	2580 2160 2580 3260
-Connection ~ 2580 3260
-Wire Wire Line
-	1260 2560 760  2560
-Wire Wire Line
-	760  3360 760  3750
-Wire Wire Line
-	760  3750 960  3750
-Connection ~ 2580 3750
-Wire Wire Line
-	960  3260 960  3750
-Wire Wire Line
-	960  3260 1260 3260
-Connection ~ 960  3750
-Wire Wire Line
-	960  3750 2580 3750
-Wire Wire Line
-	1260 2160 960  2160
-Wire Wire Line
-	960  2160 960  3260
-Connection ~ 960  3260
 Wire Bus Line
 	480  3810 3410 3810
 Wire Bus Line
@@ -1592,28 +1486,6 @@ F 11 "" H 10230 3830 50  0001 L CNN "RS Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H6
-U 1 1 5E76EB22
-P 4290 5940
-F 0 "H6" H 4390 5986 50  0000 L CNN
-F 1 "MountingHole" H 4390 5895 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.1mm" H 4290 5940 50  0001 C CNN
-F 3 "~" H 4290 5940 50  0001 C CNN
-	1    4290 5940
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H5
-U 1 1 5E76E788
-P 4290 5690
-F 0 "H5" H 4390 5736 50  0000 L CNN
-F 1 "MountingHole" H 4390 5645 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.1mm" H 4290 5690 50  0001 C CNN
-F 3 "~" H 4290 5690 50  0001 C CNN
-	1    4290 5690
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 5E7DC137
 P 5540 1140
@@ -1623,5 +1495,102 @@ F 2 "" H 5540 1140 50  0001 C CNN
 F 3 "" H 5540 1140 50  0001 C CNN
 	1    5540 1140
 	-1   0    0    1   
+$EndComp
+$Comp
+L USB4105-GF-A:USB4105-GF-A J1
+U 1 1 5E82FAA0
+P 1850 2850
+F 0 "J1" H 1850 3517 50  0000 C CNN
+F 1 "USB4105-GF-A" H 1850 3426 50  0000 C CNN
+F 2 "GCT_USB4105-GF-A" H 1850 2850 50  0001 L BNN
+F 3 "Package Analog Devices" H 1850 2850 50  0001 L BNN
+F 4 "Global Connector Technology" H 1850 2850 50  0001 L BNN "Field4"
+F 5 "Unavailable" H 1850 2850 50  0001 L BNN "Field5"
+F 6 "USB - C _Type - C_ USB 2.0 Receptacle Connector 24 Position Surface Mount, Right Angle; Through Hole" H 1850 2850 50  0001 L BNN "Field6"
+F 7 "USB4105" H 1850 2850 50  0001 L BNN "Field7"
+F 8 "None" H 1850 2850 50  0001 L BNN "Field8"
+	1    1850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E8358A7
+P 1880 3590
+F 0 "#PWR0102" H 1880 3340 50  0001 C CNN
+F 1 "GND" H 1885 3417 50  0000 C CNN
+F 2 "" H 1880 3590 50  0001 C CNN
+F 3 "" H 1880 3590 50  0001 C CNN
+	1    1880 3590
+	1    0    0    -1  
+$EndComp
+$Comp
+L RC0201FR-075K1L:RC0201FR-075K1L R3
+U 1 1 5E842724
+P 2850 3050
+F 0 "R3" H 2850 3292 50  0000 C CNN
+F 1 "RC0201FR-075K1L" H 2850 3201 50  0000 C CNN
+F 2 "RC0201FR-075K1L:RESC0603X26N" H 2850 3050 50  0001 L BNN
+F 3 "" H 2850 3050 50  0001 C CNN
+	1    2850 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L RC0201FR-075K1L:RC0201FR-075K1L R1
+U 1 1 5E863820
+P 820 3050
+F 0 "R1" H 820 3292 50  0000 C CNN
+F 1 "RC0201FR-075K1L" H 820 3201 50  0000 C CNN
+F 2 "RC0201FR-075K1L:RESC0603X26N" H 820 3050 50  0001 L BNN
+F 3 "" H 820 3050 50  0001 C CNN
+	1    820  3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 2650 820  2650
+Wire Wire Line
+	1880 3450 1880 3590
+Connection ~ 1880 3450
+Wire Wire Line
+	2650 3150 2650 3450
+Connection ~ 2650 3450
+Wire Wire Line
+	2650 3450 1880 3450
+Text Label 2650 2750 0    50   ~ 0
+D+
+Text Label 2650 2850 0    50   ~ 0
+D-
+Text Label 1050 2750 2    50   ~ 0
+D+
+Text Label 1050 2850 2    50   ~ 0
+D-
+Wire Wire Line
+	2850 2650 2650 2650
+Wire Wire Line
+	2850 3450 2650 3450
+Wire Wire Line
+	820  3450 1880 3450
+Text Label 2650 2450 0    50   ~ 0
+VBUS
+$Comp
+L Mechanical:Fiducial FID?
+U 1 1 5E97DC10
+P 4300 5680
+F 0 "FID?" H 4385 5726 50  0000 L CNN
+F 1 "Fiducial" H 4385 5635 50  0000 L CNN
+F 2 "" H 4300 5680 50  0001 C CNN
+F 3 "~" H 4300 5680 50  0001 C CNN
+	1    4300 5680
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID?
+U 1 1 5E97E3D9
+P 4300 5940
+F 0 "FID?" H 4385 5986 50  0000 L CNN
+F 1 "Fiducial" H 4385 5895 50  0000 L CNN
+F 2 "" H 4300 5940 50  0001 C CNN
+F 3 "~" H 4300 5940 50  0001 C CNN
+	1    4300 5940
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
