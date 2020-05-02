@@ -7,7 +7,7 @@ An ESP32 based lighting controller designed for lighting up bicycles, scooters, 
 ## Features
 
 * 3 axis, low noise, low zero-g error accelerometer (LIS2DHH12TR)
-* Power supervisor + 2A regulated 3.3V output for long lengths of LEDs (WS2812B or SK6812 are supported out of the box)
+* Power supervisor + 2A regulated 3.3V output for long lengths of LEDs (WS2812B style or APA102 style leds)
 * USB C Power Delivery compatible charging (does not implement the USB PD spec for higher charging rates)
 * One button input connected to the ESP32 through the power supervisor
 * One WS2812B LED for status onput
@@ -19,7 +19,7 @@ An ESP32 based lighting controller designed for lighting up bicycles, scooters, 
 * Over the Air updates over WiFi
 * BLE Mesh (will be enabled in a future firmware update)
 * Re-programmable over 6 pin programming header or via USB C so that you can load up your own firmware
-* 4 channels of output (power + signal) for LED strips
+* 4 channels of output (power + signal) for LED strips using JST-PH connectors (Qwiic connectors with different pin out)
 
 ## More Information
 
