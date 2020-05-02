@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Amp Smart Lighting Controller"
 Date "2020-03-11"
-Rev "0.6.3"
+Rev "0.7.0"
 Comp "Intentful Motion"
 Comment1 ""
 Comment2 ""
@@ -1322,7 +1322,7 @@ L SamacSys_Parts:CRCW0402140RFKEDC R4
 U 1 1 5EADB17C
 P 4400 2800
 F 0 "R4" H 4710 2810 50  0000 L CNN
-F 1 "CRCW0402140RFKEDC" H 4350 2680 50  0000 L CNN
+F 1 "CRCW040222K6FKEDC" H 4350 2680 50  0000 L CNN
 F 2 "RESC1005X35N" H 4950 2850 50  0001 L CNN
 F 3 "https://ms.componentsearchengine.com/Datasheets/34/CRCW0402140RFKEDC.pdf" H 4950 2750 50  0001 L CNN
 F 4 "Thick Film Resistors - SMD 1/16watt 140ohms 1% Commercial Use" H 4950 2650 50  0001 L CNN "Description"
