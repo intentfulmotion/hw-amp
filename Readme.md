@@ -11,8 +11,8 @@ An ESP32 based lighting controller designed for lighting up bicycles, scooters, 
 * USB C Power Delivery compatible charging (does not implement the USB PD spec for higher charging rates)
 * One button input connected to the ESP32 through the power supervisor
 * One WS2812B LED for status onput
-* DIO5158 LiPo charger @ 1A with charging and done charging indications
-* Pin connections for LiPo battery (2000 mAh recommended, 1000 mAh doable)
+* LiPo charging @ 1A with charging and done charging indications
+* Pin connections for LiPo battery with temperature sensing (2000 mAh recommended, 1000 mAh doable)
 * MessagePack configuration for lighting strip setup
 * Bluetooth LE for signaling indicators, brakes
 * Customizable and scriptable lighting modes
